@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="addteam.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Add Team Page</title>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header>
+      <nav id="navbar">
+        <div id="logoContainer" class="logo-container">
+          <a href="./index.html"
+            ><img src="./Images/ipl-logo.png" id="ipl-logo" alt="IPL-Logo"
+          /></a>
+        </div>
+        <div class="navButtons">
+          <a href="./index.html"><button class="btn">Home</button></a>
+          <button id="TeamAdd" class="btn" onclick="addTeamClick()">
+            Add Team
+          </button>
+          <button id="PlayerAdd" class="btn" onclick="addPlayerClick()">
+            Add Player
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End-->
+    <div id="addTeam" class="form-container">
+      <h1>Add Team</h1>
+      <form id="addTeamFrom">
+        <p>Team Name</p>
+        <input
+          id="input1"
+          type="text"
+          name="teamName"
+          placeholder="Enter Team Name"
+          required
+        />
+        <p>Team logo</p>
+        <input
+          id="input2"
+          type="text"
+          name="logoUrl"
+          placeholder="Team Image Address"
+          required
+        />
+        <p>Championship Won</p>
+        <input
+          id="input3"
+          type="number"
+          name="wonCount"
+          maxlength="1"
+          placeholder="Championship Won"
+          required
+        />
+        <button type="submit">Add team</button>
+      </form>
+    </div>
+    <script src="./addteam.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

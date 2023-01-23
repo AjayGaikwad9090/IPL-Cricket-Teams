@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main-container {
+  width: 100%;
+  position: absolute;
+  margin-top: 67px;
+}
+.main-container h1 {
+  text-align: center;
+  background-color: brown;
+  padding: 20px 0px;
+  color: white;
+}
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  margin: 50px auto;
+  margin-bottom: 20px;
+  width: 50%;
+  border-radius: 10px;
+  padding: 5px;
+
+  background-color: #1a237e;
+}
+table tr td {
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 10px 150px;
+}
+table tr td img {
+  width: 230px;
+}
+#teamGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -50px;
+}
+.player-card {
+  background-color: #1a237e;
+  width: 25%;
+  margin: 15px 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.player-card:hover {
+  /* margin: 0px 15px; */
+  box-shadow: 6px 4px 10px 4px gray;
+}
+.player-card img {
+  width: 100%;
+}
+.text-info {
+  text-align: center;
+  color: black;
+  margin: 0px 20px;
+  border-radius: 5px;
+  background-color: white;
+}

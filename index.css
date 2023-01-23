@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+}
+/* Header Styling */
+#ipl-logo {
+  background-color: white;
+  width: 100px;
+  border-radius: 5px;
+}
+header {
+  background-color: #e91e63;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .btn {
+  padding: 8px 12px;
+  border: none;
+  height: 32px;
+  border-radius: 15px;
+} */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  height: 32px;
+  border-radius: 15px;
+  margin: 0px 10px;
+  cursor: pointer;
+  background-color: #1a237e;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.searchBox {
+  display: flex;
+  overflow: hidden;
+}
+.right {
+  display: flex;
+}
+.searchBox {
+  background: #fff;
+  width: 28%;
+  position: relative;
+  height: 32px;
+  box-shadow: 0px 1px 5px 3px rgb(0 0 0 / 12%);
+}
+.searchBox input {
+  height: 32px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+}
+.searchBox.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.searchBox.autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+}
+.searchBox i {
+  color: #1a237e;
+  background-color: #fff;
+  height: 100%;
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
+  padding: 6px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.searchBox i:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+/* Header Styling End*/
+.staticImg img {
+  margin-top: 64px;
+  width: 100%;
+  height: 400px;
+}
+
+/* Team- Card-container start*/
+.main-contianer {
+  height: 100vh;
+}
+#teamsContainer {
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.team-card {
+  background-color: #1a237e;
+  width: 25%;
+  /* height: 450px; */
+  margin: 15px 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.team-card:hover {
+  /* margin: 0px 15px; */
+  box-shadow: 6px 4px 10px 4px gray;
+}
+.team-card img {
+  width: 230px;
+  margin: 20px 0px;
+}
+.teanInfo-text {
+  margin: 20px 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.teanInfo-text p {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+.teanInfo-text p i {
+  color: goldenrod;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+/* Team- Card-container End*/
+
+/* footer start */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 53%;
+  background-color: #000;
+  color: white;
+  padding: 30px;
+}
+.footer img {
+  width: 25px;
+  margin-right: 10px;
+}
+/* footer End */
